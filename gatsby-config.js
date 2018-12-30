@@ -3,7 +3,7 @@ module.exports = {
     title: `Coders for Causes Blog`,
     author: `David Yu`,
     description: `A blog about software using Gatsby JS starter blog theme`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://blog.codersforcauses.org`,
     social: {
       facebook: `codersforcauses`,
     },
@@ -50,20 +50,20 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-116702787-3`,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Coders for Causes Blog`,
+        short_name: `CodersBlog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#87C946`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/icon.png`,
       },
     },
     `gatsby-plugin-offline`,
