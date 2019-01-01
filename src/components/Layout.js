@@ -45,6 +45,7 @@ class Layout extends React.Component {
               textDecoration: `none`,
               color: `#87C946`,
               borderBottom: `5px solid #87C946`,
+              lineHeight: `1.4`
             }}
             to={`/`}
           >

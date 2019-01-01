@@ -26,6 +26,14 @@ class Footer extends React.Component {
         >
           Website
         </a>
+         &bull;{' '}
+        <a
+          href="https://github.com/codersforcauses"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Github
+        </a>
       </footer>
     )
   }
