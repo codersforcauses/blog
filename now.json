@@ -1,6 +1,7 @@
 {
     "version": 2,
     "name": "coders-for-causes-blog",
+    "alias": "blog.codersforcauses.org",
     "builds": [
       {
         "src": "package.json",

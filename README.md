@@ -47,6 +47,10 @@
 
 5. **Deploying**
     
+    Just run `npm run deploy`
+
+    Alternatively,
+
     Build the project first
 
     ```sh
