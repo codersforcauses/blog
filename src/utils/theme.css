@@ -146,3 +146,10 @@
    padding-left: 0.75em;
    border-left: 0.25em solid rgb(214, 255, 140);
  }
+
+ .search-bar {
+  border-radius: 300px;
+  padding: 10px;
+  border: 2px solid green;
+  padding-left: 20px;
+ }
