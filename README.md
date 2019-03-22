@@ -14,10 +14,14 @@
 
 ## 🚀 Quick start
 
-1.  **Download Gatsby CLI**
+0.  **Download Gatsby CLI**
 
     ```sh
     npm install --global gatsby-cli
+    ```
+0.1 **Install al dependencies**
+    ```sh
+    npm i
     ```
 
 1.  **Start developing.**
