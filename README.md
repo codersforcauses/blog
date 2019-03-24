@@ -50,8 +50,9 @@
     Make sure to run `npm run lint` and `npm run format` before you push any code.
 
 5. **Deploying**
-    
-    Just run `npm run deploy`
+    Make sure you are logged in with `nooblingis@gmail.com`
+
+    Just run `yarn deploy`
 
     Alternatively,
 

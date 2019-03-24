@@ -1,12 +1,13 @@
 ---
 title: Create a Mosaic in HTML and CSS
-date: '2019-03-20'
+date: 2019-03-20
 ---
 
-[<img src="main.png" alt="Main image">](http://google.com.au/)
+[<img src="main.png" alt="Main image">](https://www.youtube.com/watch?v=vnjZ3jYylsY)
 
 Click on the image to view the screen cast.
 
+Here is the accompanying code.
 ``` html
 <!DOCTYPE html>
 <html>
