@@ -11,23 +11,18 @@ class Layout extends React.Component {
   constructor(props) {
     super(props)
 
-    let theme = 'light'
-    try {
-      theme = localStorage.theme
-    } catch (err) {}
-
     this.state = {
-      theme,
+      theme: null,
     }
-
-    document.body.className = theme // Not optimal we are doing this here
   }
 
   componentDidMount() {
-    this.setState({ theme: window.__theme })
-    window.__onThemeChange = () => {
-      this.setState({ theme: window.__theme })
-    }
+    let theme = 'light'
+    try {
+      theme = localStorage.theme
+      this.setState({ theme })
+      document.body.className = theme // Not optimal we are doing this here
+    } catch (err) {}
   }
 
   setTheme(color) {
@@ -111,32 +106,40 @@ class Layout extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}
+        >
           {header}
-          <Toggle
-            icons={{
-              checked: (
-                <img
-                  src={moon}
-                  width="16"
-                  height="16"
-                  role="presentation"
-                  style={{ pointerEvents: 'none' }}
-                />
-              ),
-              unchecked: (
-                <img
-                  src={sun}
-                  width="16"
-                  height="16"
-                  role="presentation"
-                  style={{ pointerEvents: 'none' }}
-                />
-              ),
-            }}
-            checked={this.state.theme === 'dark'}
-            onChange={e => this.setTheme(e.target.checked ? 'dark' : 'light')}
-          />
+          {this.state.theme && (
+            <Toggle
+              icons={{
+                checked: (
+                  <img
+                    src={moon}
+                    width="16"
+                    height="16"
+                    role="presentation"
+                    style={{ pointerEvents: 'none' }}
+                  />
+                ),
+                unchecked: (
+                  <img
+                    src={sun}
+                    width="16"
+                    height="16"
+                    role="presentation"
+                    style={{ pointerEvents: 'none' }}
+                  />
+                ),
+              }}
+              checked={this.state.theme === 'dark'}
+              onChange={e => this.setTheme(e.target.checked ? 'dark' : 'light')}
+            />
+          )}
         </div>
         {children}
         <Footer />
