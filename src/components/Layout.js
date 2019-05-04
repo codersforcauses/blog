@@ -16,12 +16,16 @@ class Layout extends React.Component {
     }
   }
 
+  // TODO: refactor this logic
   componentDidMount() {
     let theme = 'light'
+    this.setState({theme})
     try {
       theme = localStorage.theme
-      this.setState({ theme })
-      document.body.className = theme // Not optimal we are doing this here
+      if (theme) {
+        this.setState({ theme })
+        document.body.className = theme // Not optimal we are doing this here
+      }
     } catch (err) {}
   }
 
