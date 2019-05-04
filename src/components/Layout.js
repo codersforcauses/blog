@@ -19,7 +19,7 @@ class Layout extends React.Component {
   // TODO: refactor this logic
   componentDidMount() {
     let theme = 'light'
-    this.setState({theme})
+    this.setState({ theme })
     try {
       theme = localStorage.theme
       if (theme) {

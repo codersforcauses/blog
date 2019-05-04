@@ -14,14 +14,20 @@
 
 ## 🚀 Quick start
 
+-0.1 **Clone the repo**
+    ```sh
+      git clone https://github.com/codersforcauses/blog.git
+    ```
+    cd blog
+
 0.  **Download Gatsby CLI**
 
     ```sh
-    npm install --global gatsby-cli
+    yarn global add gatsby-cli
     ```
-0.1 **Install al dependencies**
+0.1 **Install all dependencies**
     ```sh
-    npm i
+    yarn
     ```
 
 1.  **Start developing.**
@@ -29,8 +35,7 @@
     Navigate into your new site’s directory and start it up.
 
     ```sh
-    cd blog
-    gatsby develop
+    yarn dev
     ```
 
 2.  **Open the source code and start editing!**
@@ -59,7 +64,7 @@
     Build the project first
 
     ```sh
-    gatsby build
+    yarn build
     ```
 
     Take the static assets and upload it to any webhost or alternatively you could use *now(zeit)* or *netlify* to quickly deploy it without building yourself
