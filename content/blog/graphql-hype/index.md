@@ -4,7 +4,7 @@ date: 2019-04-26
 ---
 
 Facebook initially developed GraphQL for internal consumption in 2012/2013 before publically releasing it in 2015 and subsquently moved it to a foundation hosted by the non-profity Linux Foundation. Since then it has gained a lot of developer attention and many inflential companies and people have used it in production.
-![Companies that use GraphQL](/companies.png)
+![Companies that use GraphQL](./companies.png)
 The question is should you as a developer use it? As with most new technologies the answer is probably not. If you have read my previous articles there is a commom theme about new things. **If it doesn't solve a major problem for you then you should not use it in your next project.** That doesn't mean you shouldn't use it at all but rather if you have a professional project where people depend on you its always best to stick with what you are familiar with. Why? The answer is obvious, you will likely encounter many bugs, challenges, quirks once you start developing a real app. This will decrease your productivity and quality of your software. The end user isn't going to care about what fancy technology you are using, what they do care about is whether your software solves their business problem.
 
 So with that caveat out of the way lets take a look at GraphQL.

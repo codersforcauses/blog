@@ -44,6 +44,7 @@ const NewsLetterSignup = () => (
         color: 'white',
         fontWeight: '700',
         backgroundColor: '#87C946',
+        border: 'none',
         padding: '0.5rem 1rem 0.5rem 1rem',
       }}
     />
