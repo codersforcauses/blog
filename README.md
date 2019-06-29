@@ -57,7 +57,7 @@
 5. **Deploying**
     Make sure you are logged in with `nooblingis@gmail.com`
 
-    Just run `yarn deploy`
+    Just run `git push` it will deploy automatically
 
     Alternatively,
 
